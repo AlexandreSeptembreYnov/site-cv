@@ -1,0 +1,18 @@
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:9436785:
+
+<FilesMatch "\.ini$">
+	Order allow,deny
+	Deny from all
+</FilesMatch>
+
+<FilesMatch "\.sql$">
+	Order allow,deny
+	Deny from all
+</FilesMatch>
+
+ErrorDocument 403 http://localhost/CV2.0/errors/403.php
+ErrorDocument 404 http://localhost/CV2.0/errors/404.php
+
+
+Options -Indexes
